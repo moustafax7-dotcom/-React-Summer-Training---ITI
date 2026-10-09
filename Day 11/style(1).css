@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 700px;
+    text-align: center;
+}
+
+caption {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: 2px solid #4b4bb3;
+    padding: 15px;
+    font-size: 22px;
+}
+
+th {
+    font-weight: bold;
+}

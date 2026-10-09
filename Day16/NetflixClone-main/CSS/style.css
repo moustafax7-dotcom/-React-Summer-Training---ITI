@@ -1,0 +1,552 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+
+.all {
+    background-image: url(../Images/p1.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.all .effect {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.all .effect .bar {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: space-between;
+}
+
+.all .effect .bar ul li {
+    list-style-type: none;
+    display: flex;
+    padding: 40px 55px;
+}
+
+.all .effect .bar .my-name h2 {
+    padding: 40px 55px;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.all .effect .bar ul li button {
+    width: 80px;
+    height: 40px;
+    background-color: #dc030f;
+    padding: 0.25rem 0.5rem;
+    color: white;
+    border: #dc030f solid 1px;
+    border-radius: 5px;
+    font-weight: 800px;
+    font-size: 15;
+}
+
+.all .effect .bar ul li button a {
+    text-decoration: none;
+    color: white;
+    cursor: context-menu;
+}
+
+.all .effect .program {
+    width: 40%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.all .effect .program h1 {
+    line-height: 1.5;
+}
+
+.all .effect .program p {
+    line-height: 1.7;
+}
+
+.all .effect .program .specifc {
+    line-height: 1.2;
+}
+
+.all .effect .program .email {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.all .effect .program .email input {
+    padding: 15px;
+    width: 65%;
+    border: none;
+}
+
+.all .effect .program .email button {
+    font-size: 15px;
+    width: 21%;
+    border: none;
+    background-color: #dc030f;
+    padding: 15px;
+    border: 1px solid #dc030f;
+    color: white;
+    font-weight: 800px;
+}
+
+.enjoy {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    border-top: 10px solid #222;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.enjoy.s {
+    flex-direction: row-reverse;
+}
+
+.enjoy .photo {
+    width: 33%;
+    margin: 50px;
+}
+
+.enjoy .text {
+    width: 40%;
+    height: auto;
+    color: white;
+    margin: auto;
+    float: left;
+}
+
+.enjoy .text h1 {
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+
+.enjoy .text p {
+    font-size: 25px;
+}
+
+.enjoy .photo img {
+    width: 100%;
+    height: 400px;
+}
+
+/* ================================== */
+/*            Sign in Page            */
+.main {
+    height: 100vh;
+    background-color: #222;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.main .lol .sign-in {
+    width: 33%;
+    height: 53%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    background-color: #333;
+    padding: 0 50px;
+}
+
+.main .lol .sign-in h1 {
+    padding: 50px 0 0 0;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+}
+
+.main .lol .sign-in form {
+    padding: 20px 0 0 0;
+    font-weight: 700px;
+}
+
+.main .lol .sign-in form label {
+    color: white;
+    margin-right: 25%;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #b2b2b2;
+}
+
+.main .lol .sign-in form input {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 7px;
+    background-color: #444;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.main .lol .sign-in form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e50914;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.main .lol .sign-in form button:hover {
+    background-color: #a20008;
+}
+
+.main .lol .sign-in form P {
+    padding: 18px;
+    text-align: center;
+    color: #b2b2b2;
+    font-size: 14px;
+}
+
+.main .lol .sign-in form P a {
+    text-decoration: none;
+    color: #e50914;
+}
+
+/* ================================== */
+/*            Sign up Page            */
+
+.main .lol .sign-up {
+    width: 33%;
+    height: 64vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    background-color: #333;
+    padding: 0 50px;
+}
+
+.enjoy-s .photo .rec {
+    background-image: white;
+}
+
+.enjoy.t {
+
+    height: 35vh;
+    gap: 20px;
+
+}
+
+body {
+    color: white;
+}
+
+.enjoy.t .row {
+    margin: 30px;
+    width: 50%;
+    text-align: left;
+    color: rgb(118, 116, 116);
+    flex-direction: column;
+    display: inline;
+    height: 70%;
+    float: right;
+}
+
+.enjoy.t .row h4 {
+    margin-left: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.enjoy.t .row .info {
+    width: 25%;
+    height: 70%;
+    float: left;
+    margin: auto;
+}
+
+.enjoy.t .row .info p {
+    line-height: 1.6;
+
+}
+
+.enjoy.cs {
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.ques {
+    padding: 10px 12%;
+    text-align: center;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+.enjoy .ques h1 {
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-weight: 650;
+}
+
+.enjoy .ques li {
+    list-style-type: none;
+    width: 90%;
+    padding: 5px;
+    margin: auto;
+
+}
+
+.enjoy .ques li label {
+    margin: auto;
+    width: 70%;
+    background-color: #303030;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 520;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.enjoy .ques li label::after {
+    content: '+';
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    top: 0;
+    font-size: 30px;
+}
+
+.enjoy .ques li input[type="radio"] {
+    display: none;
+}
+
+.enjoy .ques li .infor {
+    padding: 0 100px;
+    width: 70%;
+    margin-left: 15%;
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1.3s;
+}
+
+.enjoy .ques li input[type="radio"]:checked+label~.infor {
+    max-height: 600px;
+    padding: 10px 20px;
+    transition: all 1.3s;
+}
+
+.enjoy .ques li input[type='radio']:checked+label::after {
+    transform: rotate(135deg);
+}
+
+.enjoy .ques h2 {
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.enjoy .ques .email {
+    display: flex;
+    justify-content: center;
+}
+
+.enjoy .ques .email input {
+    width: 47%;
+    border: none;
+    height: 50PX;
+    padding-left: 10px;
+}
+
+.enjoy .ques .email button {
+    font-size: 15px;
+    width: 15%;
+    border: none;
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    font-weight: 800px;
+}
+
+/* ================================== */
+/*             Responsive             */
+
+@media(max-width:750px) {
+    .all {
+        height: 90vh;
+        background-attachment: scroll;
+
+    }
+
+    .all .effect .bar ul li {
+        padding: 5px;
+    }
+
+    .all .effect .bar ul li button {
+        height: 30px;
+    }
+
+    .all .effect .bar .my-name h2 {
+        padding: 10px;
+        word-spacing: 100vw;
+    }
+
+    .all .effect .program {
+        width: 100%;
+        margin-top: -15px;
+        font-size: 1.1rem;
+    }
+
+    .all .effect .program h1 {
+        line-height: 1.5;
+    }
+
+    .all .effect .program .email {
+        display: block;
+
+    }
+
+    .all .effect .program .email input {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .all .effect .program .email button {
+        width: 35%;
+    }
+
+    .main .lol .sign-in {
+        width: 100%;
+        height: 57vh;
+    }
+
+    .main .lol .sign-up {
+        height: 75vh;
+    }
+
+    .enjoy {
+        display: block;
+        margin: auto;
+    }
+
+    .enjoy.s {
+        flex-direction: none;
+    }
+
+    .enjoy .photo {
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .enjoy .text {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .enjoy .text h1 {
+        padding-bottom: 20px;
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    .enjoy .text p {
+        font-size: 18px;
+    }
+
+    .enjoy .photo img {
+
+        width: 90%;
+        height: 270px;
+    }
+
+    .enjoy.t {
+        height: 60vh;
+    }
+
+    .enjoy.t .row {
+        width: 90%;
+        margin: auto;
+    }
+
+    .enjoy.t .row h4 {
+        padding-top: 20px;
+    }
+
+    .enjoy.t .row .info {
+        width: 45%;
+        height: 40%;
+        float: left;
+        margin: 5px;
+    }
+
+    .enjoy.cs .ques h1 {
+        font-size: 20px;
+    }
+
+    .enjoy.cs .ques {
+        padding: 10px 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .enjoy.cs .ques li {
+        width: 100%;
+        margin: 0;
+    }
+
+    .enjoy .ques li label {
+        width: 100%;
+    }
+
+    .enjoy .ques li .infor {
+        width: 100%;
+        margin: 0;
+    }
+
+    .enjoy .ques .email {
+        display: block;
+    }
+
+    .enjoy .ques .email input {
+        width: 90%;
+        height: 45px;
+    }
+
+    .enjoy .ques .email button {
+        width: 30%;
+        margin-top: 10px;
+        height: 45px;
+    }
+    .main .lol .sign-in form P{
+        margin: 0;
+        padding: 20px 0;
+    }
+}

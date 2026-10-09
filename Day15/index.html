@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" href="css/bs.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/fa.min.css" />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>What's For Dinner</title>
+  </head>
+  <body>
+    <header class="border-bottom shadow-sm">
+      <nav class="navbar navbar-expand-md py-3" id="navbar">
+        <div class="container-xxl px-4">
+          <!-- Logo & Title -->
+          <div class="navbar-brand py-0 d-flex align-items-center">
+            <div class="logo bg-primary-gradient p-2 rounded-circle">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <div class="text">
+              <h1 class="fw-bold mb-0">What's For Dinner</h1>
+              <p class="text-muted mb-0 small">Your daily meal inspiration</p>
+            </div>
+          </div>
+          <!-- Menu Button -->
+          <button
+            class="navbar-toggler p-0 border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav-menu"
+            aria-controls="nav-menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="fas fa-bars fa-lg"></span>
+          </button>
+          <!-- Navigation -->
+          <div
+            class="collapse navbar-collapse border-top mt-3 mt-md-0 py-3 py-md-0"
+            id="nav-menu"
+          >
+            <ul
+              class="navbar-nav list-unstyled align-items-md-center gap-3 ms-auto"
+            >
+              <li class="mb-1 mb-md-0">
+                <i class="fas fa-bookmark fa-lg me-1"></i>
+                <a href="" class="d-md-none text-decoration-none"
+                  >Saved Recipes</a
+                >
+              </li>
+              <li class="mb-1 mb-md-0">
+                <i class="fas fa-clock-rotate-left fa-lg me-1"></i>
+                <a href="" class="d-md-none text-decoration-none">Recent</a>
+              </li>
+              <li class="mb-1 mb-md-0">
+                <i class="fas fa-gear fa-lg me-1"></i>
+                <a href="" class="d-md-none text-decoration-none">Settings</a>
+              </li>
+              <li class="mb-1 mb-md-0 d-flex align-items-center gap-2">
+                <img
+                  src="images/avatar-2.jpg"
+                  alt="Profile Picture"
+                  class="rounded-circle border border-2 me-1"
+                />
+                <a href="" class="d-md-none text-decoration-none">Profile</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="py-5">
+      <div class="container-xxl px-4">
+        <div class="card flex-lg-row shadow">
+          <!-- Image -->
+          <div id="recipeCardHeading" class="card-heading"></div>
+          <div id="recipeCardBody" class="card-body p-4 pt-3">
+            <!-- Actions -->
+            <div class="d-flex justify-content-end gap-2 mb-3">
+              <div
+                class="bg-primary-subtle"
+                style="padding: 0.75rem; border-radius: 0.75rem"
+              >
+                <i class="fas fa-bookmark"></i>
+              </div>
+              <div
+                class="bg-primary-subtle"
+                style="padding: 0.75rem; border-radius: 0.75rem"
+              >
+                <i class="fas fa-share-nodes"></i>
+              </div>
+            </div>
+            <!-- Tags -->
+            <div id="recipeTags" class="tags mb-2"></div>
+            <!-- Title & Description -->
+            <div id="recipeTitle"></div>
+            <!-- Over 25min Cook Time Caution -->
+            <div id="recipeTimeCaution"></div>
+            <!-- Tabs -->
+            <ul
+              class="nav nav-tabs mb-4 flex-nowrap mt-3"
+              id="myTab"
+              role="tablist"
+            >
+              <!-- Ingredients Tab -->
+              <li class="nav-item w-25" role="presentation">
+                <button
+                  class="nav-link text-truncate w-100 text-center text-nowrap px-1 fw-semibold active border-0 rounded-0"
+                  id="ingredients-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#ingredients-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="ingredients-tab-pane"
+                  aria-selected="true"
+                >
+                  <i class="fas fa-list-check"></i> Ingredients
+                </button>
+              </li>
+              <!-- Instructions Tab -->
+              <li class="nav-item w-25" role="presentation">
+                <button
+                  class="nav-link text-truncate w-100 text-center text-nowrap px-1 fw-semibold border-0 rounded-0"
+                  id="instructions-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#instructions-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="instructions-tab-pane"
+                  aria-selected="false"
+                >
+                  <i class="fas fa-book-open"></i> Instructions
+                </button>
+              </li>
+              <!-- Nutrition Tab -->
+              <li class="nav-item w-25" role="presentation">
+                <button
+                  class="nav-link text-truncate w-100 text-center text-nowrap px-1 fw-semibold border-0 rounded-0"
+                  id="nutrition-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nutrition-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="nutrition-tab-pane"
+                  aria-selected="false"
+                >
+                  <i class="fas fa-pie-chart"></i> Nutrition
+                </button>
+              </li>
+              <!-- Chef's Tips Tab -->
+              <li class="nav-item w-25" role="presentation">
+                <button
+                  class="nav-link text-truncate w-100 text-center text-nowrap px-1 fw-semibold border-0 rounded-0"
+                  id="tips-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tips-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="tips-tab-pane"
+                  aria-selected="false"
+                >
+                  <i class="fas fa-lightbulb"></i> Chef's Tips
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <!-- Ingredients Tab -->
+              <div
+                class="tab-pane p-4 rounded-2 fade show active"
+                id="ingredients-tab-pane"
+                role="tabpanel"
+                aria-labelledby="ingredients-tab"
+                tabindex="0"
+              >
+                <ul id="recipeIngredients" class="list-unstyled mb-0"></ul>
+              </div>
+              <!-- Instructions Tab -->
+              <div
+                class="tab-pane rounded-2 fade"
+                id="instructions-tab-pane"
+                role="tabpanel"
+                aria-labelledby="instructions-tab"
+                tabindex="0"
+              >
+                <ul id="recipeInstructions" class="list-unstyled mb-0"></ul>
+              </div>
+              <!-- Nutrition Tab -->
+              <div
+                class="tab-pane rounded-2 fade"
+                id="nutrition-tab-pane"
+                role="tabpanel"
+                aria-labelledby="nutrition-tab"
+                tabindex="0"
+              >
+                <div id="recipeNutrition" class="row gx-0 gy-3"></div>
+              </div>
+              <!-- Chef's Tips Tab -->
+              <div
+                class="tab-pane rounded-2 fade"
+                id="tips-tab-pane"
+                role="tabpanel"
+                aria-labelledby="tips-tab"
+                tabindex="0"
+              ></div>
+            </div>
+            <hr class="my-4" />
+            <!-- Call-to-action Button -->
+            <button
+              style="--bs-btn-border-radius: 0.75rem; padding: 0.75rem 1rem"
+              class="btn bg-primary-gradient fw-medium shadow"
+              onclick="selectRandomRecipe(getRandomNum());"
+            >
+              <i class="fas fa-arrows-rotate fa-sm"></i> Try Another Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

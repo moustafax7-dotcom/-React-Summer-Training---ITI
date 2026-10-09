@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #fff3e6;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #8a3b12;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 150px;
+}
+
+.field label {
+    color: #8a3b12;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.field input {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.field input:focus {
+    outline: none;
+    border-color: #e8722c;
+}
+
+#addBtn {
+    padding: 11px 22px;
+    background-color: #e8722c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#addBtn:hover {
+    background-color: #c65f22;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+th {
+    background-color: #e8722c;
+    color: white;
+    padding: 16px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th:last-child, td:last-child {
+    text-align: center;
+}
+
+td {
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #444;
+}
+
+tbody tr:hover {
+    background-color: #fff8f1;
+}
+
+td button {
+    border: none;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+td button:first-child {
+    background-color: #d99a3d;
+}
+
+td button:first-child:hover {
+    background-color: #b97e2c;
+}
+
+td button:last-child {
+    background-color: #c1440e;
+}
+
+td button:last-child:hover {
+    background-color: #9c360b;
+}
+
+@media (max-width: 700px) {
+    .form-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    #addBtn {
+        width: 100%;
+    }
+    table, thead, tbody, th, td, tr {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,236 @@
+:root {
+  --primary: hsl(18, 100%, 48%);
+  --bs-primary-rgb: 245, 73, 0;
+  --bs-primary-bg-subtle: hsl(35, 100%, 92%);
+  --bs-primary-border-subtle: hsl(42, 100%, 81%);
+  --primary-gradient: to bottom right, hsl(25, 100%, 50%), hsl(357, 96%, 58%);
+}
+@media (min-width: 768px) {
+  :root {
+    font-size: 18px;
+  }
+}
+.bg-primary-subtle {
+  color: var(--primary);
+}
+.bg-primary-gradient {
+  background-image: linear-gradient(var(--primary-gradient));
+  color: white;
+}
+
+/* Nav */
+.container-fluid {
+  padding-inline: 0.75rem;
+}
+.navbar-brand {
+  column-gap: 0.75rem;
+}
+.navbar-brand .logo {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-brand .text {
+  font-size: 14px;
+}
+.navbar-brand .text h1 {
+  font-size: 1.3em;
+  line-height: 1.5;
+}
+/* Menu Button */
+.navbar-toggler {
+  transition: color 0.15s ease;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler:hover {
+  color: var(--primary);
+}
+.navbar-nav li {
+  color: hsl(216, 15%, 34%);
+  cursor: pointer;
+}
+.navbar-nav li:hover {
+  color: var(--primary);
+}
+.navbar-nav li a {
+  color: inherit !important;
+}
+/* Profile Picture */
+.navbar-nav li:nth-child(4) img {
+  width: 2rem;
+  border-color: hsl(32, 100%, 71%) !important;
+}
+/* Media */
+@media (min-width: 768px) {
+  .navbar-brand .text {
+    font-size: 18px;
+  }
+  .navbar-collapse {
+    border: none !important;
+  }
+}
+
+/* Main */
+.card {
+  --bs-card-border-radius: 1.5rem;
+  --bs-card-inner-border-radius: 1.5rem;
+}
+/* Image */
+.card-heading > div {
+  height: 400px;
+}
+.card-heading .rating {
+  top: 1.5rem;
+  left: 1.5rem;
+}
+.card-heading .info {
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  padding: 0.75rem;
+}
+.card-heading .info i {
+  line-height: 1.5;
+}
+/* Actions */
+.card-body > :first-child > * {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.card-body > :first-child > *:hover {
+  background-color: hsl(32, 100%, 83%) !important;
+}
+/* Tags */
+.card-body .badge {
+  --bs-badge-padding-x: 1em;
+  --bs-badge-padding-y: 0.5em;
+}
+/* Tabs */
+.card-body .nav-tabs {
+  font-size: 0.8rem;
+  --bs-nav-link-color: hsl(220, 10%, 46%);
+  --bs-nav-link-hover-color: hsl(217, 21%, 27%);
+}
+.card-body .nav-tabs .nav-link {
+  font-size: 0.875rem;
+}
+.card-body .nav-tabs .nav-link.active {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary) !important;
+}
+.card-body .tab-content {
+  height: 350px;
+  overflow-y: auto;
+}
+/* Ingredients Tab */
+.card-body .tab-pane:first-child {
+  background-image: linear-gradient(
+    to bottom right,
+    hsl(33, 100%, 96%),
+    hsl(48, 100%, 96%)
+  );
+}
+.card-body .tab-pane:first-child li > :first-child {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(25, 100%, 50%);
+  font-size: 0.75rem;
+}
+/* Instructions Tab */
+.card-body .tab-pane:nth-child(2) li > :first-child {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(25, 100%, 50%);
+  font-size: 1.125rem;
+  flex-shrink: 0;
+}
+/* Nutrition Tab */
+.card-body .tab-pane:nth-child(3) .mini-card {
+  background-color: hsl(210, 20%, 98%);
+}
+.card-body .tab-pane:nth-child(3) .icon i {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-body .tab-pane:nth-child(3) .row > :first-child .icon {
+  background-color: hsl(35, 100%, 92%);
+  color: hsl(18, 100%, 48%);
+}
+.card-body .tab-pane:nth-child(3) .row > :nth-child(2) .icon {
+  background-color: hsl(214, 95%, 93%);
+  color: hsl(221, 97%, 53%);
+}
+.card-body .tab-pane:nth-child(3) .row > :nth-child(3) .icon {
+  background-color: hsl(55, 97%, 88%);
+  color: hsl(39, 100%, 41%);
+}
+.card-body .tab-pane:nth-child(3) .row > :nth-child(4) .icon {
+  background-color: hsl(0, 100%, 94%);
+  color: hsl(357, 100%, 45%);
+}
+.card-body .tab-pane:nth-child(3) .row > :nth-child(5) .icon {
+  background-color: hsl(141, 84%, 93%);
+  color: hsl(142, 100%, 33%);
+}
+.card-body .tab-pane:nth-child(3) .row > :nth-child(6) .icon {
+  background-color: hsl(326, 78%, 95%);
+  color: hsl(329, 100%, 45%);
+}
+.card-body .tab-pane:nth-child(3) .nutrition-type {
+  font-size: 0.75rem;
+}
+/* Chef's Tips Tab */
+.card-body .tab-pane:nth-child(4) > div {
+  background-color: hsl(48, 100%, 96%);
+  border-left: 4px solid hsl(44, 100%, 50%);
+  border-radius: 0.75rem;
+}
+/* Call-to-action Button */
+.card-body > button {
+  transition: transform 0.2s ease;
+  font-size: 0.875rem !important;
+}
+.card-body > button:hover {
+  transform: scale(1.05);
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    hsl(18, 100%, 48%),
+    rgb(231, 0, 11)
+  );
+}
+.card-body > button:active {
+  color: white !important;
+  border: none;
+}
+/* Media */
+@media (min-width: 768px) {
+  .card-body .tab-pane:nth-child(3) .nutrition-type {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 992px) {
+  .card-heading > div {
+    width: calc(100vw * 2 / 5);
+    height: 100%;
+  }
+  .card-img-top {
+    border-radius: 0;
+    border-top-left-radius: var(--bs-card-inner-border-radius);
+    border-bottom-left-radius: var(--bs-card-inner-border-radius);
+  }
+}

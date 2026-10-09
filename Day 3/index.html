@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+   <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="container">
+        <p class="error"></p>
+      <form>
+        <div class="user-container">
+          <label for="user">Email:</label>
+          <i class="fa-regular fa-user"></i>
+          <input
+            id="user"
+            type="text"
+            name="user"
+            placeholder="enter your name"
+          /> 
+        </div>
+        <div class="pass-container">
+          <label for="pass">password:</label>
+          <i class="fa-solid fa-lock"></i>
+          <input
+            id="pass"
+            type="password"
+            name="pass"
+            placeholder="*********"
+          />
+          <span class="eye-icon"><i class="fa-solid fa-eye-slash fa-eye"></i>
+       </span>
+        </div>
+        <button  type="submit">login</button>
+      </form>
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>

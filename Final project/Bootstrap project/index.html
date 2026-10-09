@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid " >
+                <a class="navbar-brand ms-5" style="color:  #ffffff; font-size: x-large; font-weight: bold;"  href="#">Feane</a>
+                <button  id="link1" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span   class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav "  >
+                        <li class="nav-item" >
+                        <a id="link1"  class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a id="link1"  class="nav-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                        <a  id="link1" class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                        <a  id="link1" class="nav-link " href="#">Book Table</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="header_com">
+                    <a id="link1" href="#" class="user_link " >
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </a>
+                    <a id="link1" href="#" class="cart_link">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <a id="link1" href="#" class="search_link">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+                <div>
+                    <button class=" btn bg-warning rounded-pill  me-5 " style="color: #ffffff; "  type="button"> Order Online</button>
+                </div>
+            </div>
+        </nav>
+        <div id="header_content">
+            <section id="section_header">
+                <h1 id="head22">Fast Food Restaurant</h1>
+                <p style="font-size: medium;">Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p>
+                <button id="button" class=" btn rounded-pill bg-warning me-5" style="color: #ffffff; "  type="button"> Order Now</button>
+                <div id="move_div">
+                    <input id="move" type="radio" name="radio" >
+                    <input id="move" type="radio" name="radio" >
+                    <input id="move" type="radio" name="radio"  >
+                </div>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section style="display:flex; justify-content: center; margin-top: 100px;">
+            <div class="cards  rounded" style="width: 500px; height: 200px; background-color:#222831 ; display: flex; color: #ffffff;" >
+                <img id="img" src="images/offer-2.jpg" class="card-image  border border-4 border-warning rounded-pill m-2" style="width: 150px; height: 150px;">
+                <div class="card-body ms-3 mt-3">
+                    <h1 class="card-title"style="font-size:large;"> Tasty Thursdays</h1>
+                    <p class="card-text" style="font-size:xx-large;"> 20% Off</p>
+                    <button id="button" class=" btn rounded-pill bg-warning me-5" style="color: #ffffff; "  type="button"> Order Now <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+            <div class="cards rounded" style="width: 500px; height: 200px;background-color:#222831 ; display: flex; color: #ffffff; margin-left: 50px;" >
+                <img id="img" src="images/offer-1.jpg" class="card-image  border border-4 border-warning rounded-pill m-2" style="width: 150px; height: 150px;">
+                <div class="card-body ms-3 mt-3">
+                    <h1 class="card-title " style="font-size:large;"> Pizza Days</h1>
+                    <p class="card-text" style="font-size:xx-large;" > 15% Off</p>
+                    <button id="button" class=" btn rounded-pill bg-warning me-5" style="color: #ffffff; "  type="button"> Order Now <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+
+        </section>
+        <menu>
+            <div class="container">
+                <div class="heading_container">
+                    <h2>Our Menu</h2>
+                </div>
+
+                
+                <ul class="filters_menu">
+                    <li class="active" data-filter="*">All</li>
+                    <li data-filter=".burger">Burger</li>
+                    <li data-filter=".pizza">Pizza</li>
+                    <li data-filter=".pasta">Pasta</li>
+                    <li data-filter=".fries">Fries</li>
+                </ul>
+
+                <div class="filters-content">
+                    <div class="row grid">
+                        
+                        <div class="col-sm-6 col-lg-4 all pizza">
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="images/product-6.png" alt="Pizza">
+                                </div>
+                                <div class="detail-box">
+                                    <h5>Delicious Pizza</h5>
+                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                                    <div class="options">
+                                        <h6>$20</h6>
+                                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4 all burger">
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="images/product-7.png" alt="Burger">
+                                </div>
+                                <div class="detail-box">
+                                    <h5>Delicious Burger</h5>
+                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                                    <div class="options">
+                                        <h6>$15</h6>
+                                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4 all pizza">
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="images/product-3.png" alt="Pizza">
+                                </div>
+                                <div class="detail-box">
+                                    <h5>Delicious Pizza</h5>
+                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                                    <div class="options">
+                                        <h6>$17</h6>
+                                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4 all pasta">
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="images/product-4.png" alt="Pasta">
+                                </div>
+                                <div class="detail-box">
+                                    <h5>Delicious Pasta</h5>
+                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                                    <div class="options">
+                                        <h6>$18</h6>
+                                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4 all fries">
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="images/product-5.png" alt="Fries">
+                                </div>
+                                <div class="detail-box">
+                                    <h5>French Fries</h5>
+                                    <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                                    <div class="options">
+                                        <h6>$10</h6>
+                                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="btn-box">
+                    <a href="">View More</a>
+                </div>
+            </div>
+        </menu>
+        <about  style="display: inline-flex; background-color: #222831; color: #ffffff; ">
+           <img  src="images/about-image.png" style="width: 400px; height: 400px; margin-left: 200px; margin-top: 100px; margin-bottom: 100px;">
+           <div  style="margin-top: 200px; margin-left: 50px;">
+                <h1 >We Are Feane</h1>
+                <p >There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All</p>
+                <button id="button" class=" btn rounded-pill bg-warning me-5" style="color: #ffffff; "  type="button"> Read More</button>
+           </div>
+        </about>
+        <book-table style="margin-top: 5%; display: inline-flex; margin-bottom: 5%;">
+            <div  style="margin-left: 200px;">
+                <h1>Book A Table</h1>
+                <form class="form " style="width: 500px; height: 5%; " >
+                  <input  class="form-control mt-3" type="text" placeholder="Your Name">
+                  <input  class="form-control mt-3" type="text" placeholder="Phone Number">
+                  <input  class="form-control mt-3" type="email" placeholder="Your Email">
+                  <input  class="form-control mt-3" type="number" placeholder="How many persons? ">
+                  <input  class="form-control mt-3" type="date" placeholder="Date">
+                  <button id="button" class=" btn rounded-pill bg-warning mt-5" style="color: #ffffff; "  type="button"> Book Now</button>
+                </form>
+            </div >
+            <div style="margin-left: 100px">
+                <iframe class=" rounded " src="https://maps.app.goo.gl/RDVZkbEwsdAPFz3u8?g_st=ac" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </book-table>
+        <section class="testimonial-section pt-5">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="testimonial-heading">What Says Our Customers</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <div class="testimonial-box">
+                            <p class="review-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                            </p>
+                            <h5>Mike Hamell</h5>
+                            <p class="mb-0">magna aliqua</p>
+                        </div>
+                        <div class="client-avatar-container">
+                            <div class="client-avatar">
+                                <img src="images/client-1.jpg" alt="Mike Hamell">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <div class="testimonial-box">
+                            <p class="review-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                            </p>
+                            <h5>Moana Michell</h5>
+                            <p class="mb-0">magna aliqua</p>
+                        </div>
+                        <div class="client-avatar-container">
+                            <div class="client-avatar">
+                                <img src="images/client-2.jpg" alt="Moana Michell">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center slider-controls">
+                    <button class="slider-btn" aria-label="Previous">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn" aria-label="Next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid">
+        <div id="up" class="row">
+            <div1 class="col-lg-4 col-md-12 col-sm-12 " style="text-align: center;">
+                <address >
+                    <h style="font-weight:900 ; font-size: large; font-family:cursive ">Contact Us</h><br><br>
+                    <a id="link1" target="_blank" rel="noopener" href="https://maps.app.goo.gl/RDVZkbEwsdAPFz3u8?g_st=ac">
+                       <i class="fa fa-map-marker" aria-hidden="true"></i>
+                       <span>location</span> 
+                    </a>
+                    <br>
+                    <a id="link1" target="_blank" rel="noopener" href="https://wa.me/201127434078" >
+                       <i class="fa fa-phone" aria-hidden="true"></i>
+                       <span>call +1127434078</span>   
+                    </a>
+                    <br>
+                    <a id="link1" target="_blank" rel="noopener" href="#" >
+                       <i class="fa fa-envelope" aria-hidden="true"></i>
+                       <span>moustafa.mahmoudx7@gmail.com</span>
+                    </a>
+                </address>
+            </div1>
+            <div2 class="col-lg-4 col-md-12 col-sm-12" style="text-align: center;">
+                <address>
+                    <h style="font-weight:900; font-size: large; font-family:cursive ">Feane</h><br> <br>
+                    <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with</p> 
+                    <div class="container-fluid d-flex justify-content-evenly ">
+                       <a  id="link1" href="#" >
+                            <i class="fa-brands fa-facebook-f"></i>
+                       </a>
+                       <a id="link1" href="#" >
+                           <i class="fa-brands fa-twitter"></i>
+                       </a>
+                       <a  id="link1" href="#" >
+                           <i class="fa-brands fa-linkedin-in"></i>
+                       </a>
+                       <a  id="link1" href="#" >
+                           <i class="fa-brands fa-instagram"></i>
+                       </a>
+                       <a  id="link1" href="#" >
+                          <i class="fa-brands fa-pinterest-p"></i>
+                       </a>
+                    </div>
+                </address>
+            </div2>
+            <div3 class="col-lg-4 col-md-12 col-sm-12" style="text-align: center;">
+                <address>
+                    <h style="font-weight:900 ; font-size: large; font-family:cursive ">Opening Hours</h><br><br>
+                    <p>Everyday</p>
+                    <p>10.00 Am -10.00 Pm</p>
+                </address>
+            </div3>
+        </div>
+        <div id="down" style="text-align: center;">
+            <p>© 2026 All Rights Reserved By Free Html Templates</p>
+            <p>© Distributed By ThemeWagon</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
